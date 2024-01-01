@@ -185,6 +185,17 @@
         >
           <a href="https://x.com/Geminaierc">Twitter</a>
         </button>
+        <button
+          onclick="openPDF()"
+          style="
+            padding: 5px 15px;
+            border: 1px solid white;
+            border-radius: 15px;
+            margin-left: 10px;
+          "
+        >
+          <a href="">Whitepaper</a>
+        </button>
       </div>
       <section
         class="relative flex w-full flex-col items-center lg:flex-row lg:justify-center"
@@ -4267,6 +4278,15 @@
     </script>
     <script>
       self.__next_f.push([1, ""]);
+    </script>
+    <script>
+      function openPDF() {
+        // Replace 'path/to/your/file.pdf' with the actual path to your PDF file
+        var pdfPath = "./Gemini AI ERC Whitepaper.pdf";
+
+        // Open a new tab with the PDF file
+        window.open(pdfPath, "_blank");
+      }
     </script>
   </body>
 </html>
